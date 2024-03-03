@@ -5,6 +5,7 @@ import { Bars3Icon, ChatBubbleLeftIcon, HomeIcon, PaperAirplaneIcon, PhoneIcon, 
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import Link from 'next/link'
 import React, { Fragment, useState } from 'react'
+import Image from 'next/image'
 
 const products = [
     {
@@ -50,11 +51,18 @@ function Header() {
                 <div className='flex lg:flex-1'>
                     <Link href={'/'} className='-m-1.5 p-1.5'>
                         <span className='sr-only'>Booking.com</span>
-                        <img
-                            className='h-12 w-quto'
-                            src="https://static1.squarespace.com/static/5bde0f00c3c16aa95581e2e2/62b4cb1add9d257dd43bb03d/62b653fedc7c895918d19b24/1656116254983/booking+logo+white.png?format=1500w"
+                        <Image
+                            className='h-12 w-auto'
+                            width='500'
+                            height='500'
+                            src={"https://static1.squarespace.com/static/5bde0f00c3c16aa95581e2e2/62b4cb1add9d257dd43bb03d/62b653fedc7c895918d19b24/1656116254983/booking+logo+white.png?format=1500w"}
                             alt="logo"
                         />
+                        {/* <img
+                            className='h-12 w-auto'
+                            src="https://static1.squarespace.com/static/5bde0f00c3c16aa95581e2e2/62b4cb1add9d257dd43bb03d/62b653fedc7c895918d19b24/1656116254983/booking+logo+white.png?format=1500w"
+                            alt="logo"
+                        /> */}
                     </Link>
                 </div>
 
